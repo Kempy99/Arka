@@ -9,19 +9,26 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <a class="brand" href="index.html#top">
+  <nav class="nav" aria-label="Galvenā navigācija">
+    <div class="nav-shell">
+    <a class="brand" href="index.html#top" aria-label="Arka Preiļi — sākums">
       <span class="mark">A</span>
       <span>
         <b>ARKA</b>
         <small>PREIĻI</small>
       </span>
     </a>
-    <div class="links">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="menu-label">Izvēlne</span>
+    </button>
+    <div class="links" id="site-nav">
       <a href="index.html#piedavajums">Piedāvājums</a>
       <a href="index.html#par-arka">Par Arku</a>
       <a href="index.html#terase">Terase</a>
       <a href="index.html#kontakti">Kontakti</a>
+      <a class="nav-cta" href="index.html#kontakti">Pasūtīt</a>
+    </div>
     </div>
   </nav>
 
@@ -87,6 +94,7 @@
       </ul>
     </section>
   </main>
+  <script src="nav.js"></script>
 </body>
 
 </html>
